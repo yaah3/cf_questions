@@ -2,7 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import sys
 
-URL = "https://codeforces.com/submissions/Yoo_booy/page/"
+URL = "https://codeforces.com/submissions/"
+handle = input("Please enter your codeforces handle: ")
+URL = URL + handle + '/page/' 
 k=1
 acc=0
 rej=0
